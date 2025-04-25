@@ -14,7 +14,7 @@ export default function TodoForm() {
   const handleGetListData = async () => {
     try {
       setLoading(true);
-      const res = await axios.get(`http://localhost:9999/listTodo`);
+      const res = await axios.get(`http://localhost:3000/listTodo`);
       setListData(res.data);
     } catch (error) {
       console.log(error);
